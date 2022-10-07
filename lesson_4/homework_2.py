@@ -16,9 +16,9 @@ revers_symbols = (some_str.upper()[::-1])
 
 print(revers_symbols)
 
-print(type(some_str))
-print(type(Even_symbols))
-print(type(revers_symbols))
+#print(type(some_str))
+#print(type(Even_symbols))
+#print(type(revers_symbols))
 
 
 
