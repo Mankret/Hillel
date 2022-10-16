@@ -6,22 +6,25 @@
 # буква "Д" или буква "Y" в любом регистре, то произвести выход из вечного цикла. В противном случае продолжить
 # выполнение программы заново.
 
-name = input(" Введите ваше имя: ")
-age = input(" Введите ваш возраст: ")
+while True:
 
-if not age.isdigit() or int(age) <= 0:
-    print("Ошибка, повторите ввод")
-elif int(age) < 10 and int(age) != 10:
-    print(f"Привет, шкет {name}")
-elif int(age) <= 18:
-    print(f"Как жизнь, {name}")
-elif int(age) > 18 <= 100:
-    print(f"Что желаете, {name}")
-else:
-    print(f"{name}, вы лжете - в наше время столько не живут... ")
+    name = input(" Введите ваше имя: ")
+    age = input(" Введите ваш возраст: ")
 
-
-
-
-
-
+    if not age.isdigit() or int(age) <= 0:
+        print("Ошибка, повторите ввод")
+        continue
+    elif int(age) < 10 and int(age) != 10:
+        print(f"Привет, шкет {name}")
+        continue
+    elif int(age) <= 18:
+        print(f"Как жизнь, {name}")
+        continue
+    elif 18 < int(age) < 100:
+        print(f"Что желаете, {name}")
+        continue
+    else:
+        print(f"{name}, вы лжете - в наше время столько не живут... ")
+        offer = input("Желаете выйти? (Д/Y)")
+        if offer.upper() in ('Д', 'Y'):
+            break
