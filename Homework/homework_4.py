@@ -35,7 +35,7 @@ while True:
         if offer.upper() in ('Д', 'Y'):
             break
         continue
-    else:
+    elif int(age) > 100:
         print(f"{name}, вы лжете - в наше время столько не живут... ")
         offer = input("Желаете выйти? (Д/Y): ")
         if offer.upper() in ('Д', 'Y'):
