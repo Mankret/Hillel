@@ -13,18 +13,30 @@ while True:
 
     if not age.isdigit() or int(age) <= 0:
         print("Ошибка, повторите ввод")
+        offer = input("Желаете выйти? (Д/Y): ")
+        if offer.upper() in ('Д', 'Y'):
+            break
         continue
-    elif int(age) < 10 and int(age) != 10:
+    elif int(age) < 10:
         print(f"Привет, шкет {name}")
+        offer = input("Желаете выйти? (Д/Y): ")
+        if offer.upper() in ('Д', 'Y'):
+            break
         continue
     elif int(age) <= 18:
         print(f"Как жизнь, {name}")
+        offer = input("Желаете выйти? (Д/Y): ")
+        if offer.upper() in ('Д', 'Y'):
+            break
         continue
-    elif 18 < int(age) < 100:
+    elif int(age) < 100:
         print(f"Что желаете, {name}")
+        offer = input("Желаете выйти? (Д/Y): ")
+        if offer.upper() in ('Д', 'Y'):
+            break
         continue
     else:
         print(f"{name}, вы лжете - в наше время столько не живут... ")
-        offer = input("Желаете выйти? (Д/Y)")
+        offer = input("Желаете выйти? (Д/Y): ")
         if offer.upper() in ('Д', 'Y'):
             break
