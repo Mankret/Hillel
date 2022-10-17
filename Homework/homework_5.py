@@ -5,10 +5,10 @@
 number = int(input("Введите число: "))
 csum = 0
 
-for i in range(number+1):
-    if i % 3 == 0:
+for numb in range(number+1):
+    if numb % 3 == 0:
         continue
-    csum += i**3
+    csum += numb**3
 print(csum)
 
 while number < 0:
