@@ -1,9 +1,15 @@
 # Дан словарь, создать новый словарь при помощи конструкции генератор словаря, поменяв местами ключ и значение.
 
 
-some_dict = {1: 'Avalon', 2: 'Babylon', 3: 'Byzantium', 4: 'Empire'}
-generation_dict = {v: k for k, v in some_dict.items()}
+chess_players = {
+    "Carlsen, Magnus": 2865,
+    "Firouzja, Alireza": 2804,
+    "Ding, Liren": 2799,
+    "Caruana, Fabiano": 2792,
+    "Nepomniachtchi, Ian": 2773
+}
+generation_dict = {v: k for k, v in chess_players.items()}
 
-print(some_dict, generation_dict, sep='\n')
+print(chess_players, generation_dict, sep='\n')
 
 
