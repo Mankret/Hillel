@@ -8,11 +8,11 @@ dict_keeper = {}
 
 
 def count():
-    for i in random_list:
-        if dict_keeper.get(i):
-            dict_keeper[i] += 1
+    for rand in random_list:
+        if dict_keeper.get(rand):
+            dict_keeper[rand] += 1
         else:
-            dict_keeper[i] = 1
+            dict_keeper[rand] = 1
 
     print(random_list, dict_keeper, sep='\n')
 
