@@ -4,7 +4,7 @@
 
 input_data = ['Страна', 'шалаш', 'Летел', 'вертолёт', 'УЧУ', 'мэм', 'язык']
 
-result = tuple(filter(lambda x: x == x[::-1], input_data))
+result = tuple(filter(lambda x: x.lower() == x[::-1].lower(), input_data))
 print("Palindrome is : ", result)
 
 
