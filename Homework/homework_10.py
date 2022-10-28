@@ -5,9 +5,6 @@
 # values = [1, 2, '3', 'forth', 'end', 99, True, None]
 
 values = [1, 2, '3', 'forth', 'end', 99, True, None]
-print(values)
-print(type(values[2]))
-print(len(values))
 
 new_list = (list(map(lambda x: str(x), (values[0], values[1], values[5]))))
 values[0] = new_list[0]
@@ -17,5 +14,4 @@ new_list = values
 
 
 print(new_list)
-print(type(new_list[5]))
-print(len(new_list))
+
