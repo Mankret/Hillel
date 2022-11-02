@@ -15,7 +15,7 @@ cur = connection.cursor()
 
 #
 # query_sql = '''
-#     SELECT sum(DISTINCT UnitPrice * Quantity)
+#     SELECT sum(UnitPrice * Quantity)
 #       FROM invoice_items;
 # '''
 # rows = cur.execute(query_sql).fetchone()
@@ -38,3 +38,4 @@ for row in rows:
     print("Имя и количество повторов : ", *row)
 
 
+connection.close()
