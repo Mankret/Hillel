@@ -2,7 +2,7 @@
 # элементов – имя(str), возраст(int). Сделать около 5-6 элементов словаря. Записать данный словарь на диск в json-файл
 import json
 
-new_dict = {
+input_dict = {
     2312345: ('Joghn', 23),
     564765: ('Mike', 65),
     897654: ('Sandra', 32),
@@ -12,4 +12,4 @@ new_dict = {
 
 
 with open('jsontest.json', 'w') as f:
-    json.dump(new_dict, f)
+    json.dump(input_dict, f)
