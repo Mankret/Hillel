@@ -9,7 +9,7 @@ with open('jsontest.json', encoding="utf-8") as f:
 
     id_data = zip([*data.items()])
 fieldnames = [["Id", "Name", "Age", "Phone"]]
-phone = [["111-222"], ["333-444"], ["555-666"], ["777-888"], ["999-111"]]
+# phone = [["111-222"], ["333-444"], ["555-666"], ["777-888"], ["999-111"]]
 
 with open("data_csv.csv", "w", newline="") as f:
     dict_writer = csv.writer(f, delimiter=";")
