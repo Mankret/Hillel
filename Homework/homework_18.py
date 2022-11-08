@@ -4,15 +4,17 @@
 import csv
 import json
 
-with open('jsontest.json', 'r') as f:
+with open('jsontest.json', encoding="utf-8") as f:
     data = json.load(f)
 
-additional_data = [['Id', 'Name', 'Age', 'Phone']]
+    id_data = zip([*data.items()])
+fieldnames = [["Id", "Name", "Age", "Phone"]]
+phone = [["111-222"], ["333-444"], ["555-666"], ["777-888"], ["999-111"]]
 
+with open("data_csv.csv", "w", newline="") as f:
+    dict_writer = csv.writer(f, delimiter=";")
+    dict_writer.writerows(fieldnames)
+    # dict_writer.writerows(iq_data)
 
-with open('data_csv.csv', 'w', newline="") as f:
-    writer = csv.writer(f, delimiter=';')
-    writer.writerows(additional_data)
-
-    for line in (data.items()):
-        writer.writerow(line)
+    for items in id_data:
+        dict_writer.writerows(items)
