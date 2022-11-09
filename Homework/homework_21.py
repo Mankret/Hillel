@@ -20,7 +20,7 @@ class Auto:
         print("Move")
 
     def birthday(self):
-        for item in range(1998, self.age + 1):
+        for item in range(2010, self.age + 1):
             print(f"age:  {item}")
 
     def stop(self):
