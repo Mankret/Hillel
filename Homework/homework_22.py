@@ -11,9 +11,11 @@
 from homework_21 import Auto
 import time
 
+
 class Truck(Auto):
     max_load = True
     weight = '8500 kg'
+
     def __init__(self, brand, age, mark, max_load):
         super().__init__(brand, age, mark)
         self.max_load = max_load
@@ -22,15 +24,16 @@ class Truck(Auto):
         print("Attention")
         super().move()
 
-
     def load(self):
         time.sleep(1)
         print("load")
         time.sleep(1)
 
+
 class Car(Auto):
     max_speed = True
     weight = '2000 kg'
+
     def __init__(self, brand, age, mark, max_speed):
         super().__init__(brand, age, mark)
         self.max_speed = max_speed
@@ -39,19 +42,26 @@ class Car(Auto):
         super(Car, self).move()
         print(f"Max speed is {self.max_speed}")
 
+
 print("!!!testing class Truck")
 
 test_truck = Truck('brands', 2011, 'Scania', 2314)
+print(f"Brand is {test_truck.brand}")
 test_truck.move()
 test_truck.load()
 print(f"color is {test_truck.color}, weight this truck is {test_truck.weight}")
-test_truck.birthday()
+print(test_truck.mark)
+print(f"Age  this truck is {test_truck.age}")
+# test_truck.birthday()
 test_truck.stop()
 
 print("*" * 50)
 print("!!!testing class Car")
 mcar = Car('bb', 2009, 'BMW', 266)
+print(f"Brand is {mcar.brand}")
 print(f"Color is {mcar.color}, and weight is {mcar.weight}")
+print(f"Mark is {mcar.mark}")
+print(f"Age  this car is {mcar.age}")
 mcar.move()
-mcar.birthday()
+# mcar.birthday()
 mcar.stop()
