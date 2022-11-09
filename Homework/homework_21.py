@@ -20,7 +20,7 @@ class Auto:
         print("Move")
 
     def birthday(self):
-        for item in range(2010, self.age + 1):
+        for item in range(1999, self.age + 1):
             print(f"age:  {item}")
 
     def stop(self):
@@ -28,8 +28,9 @@ class Auto:
 
 
 car = Auto("merce", 2018, '221b')
-car.birthday()
-
-car.stop()
-car.move()
-print(car.color, car.weight, sep='\n')
+#car.birthday()
+# print("Parent Class")
+# #car.stop()
+# #car.move()
+# print(car.color, car.weight, sep='\n')
+# #car.birthday()
