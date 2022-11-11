@@ -11,6 +11,5 @@ input_dict = {
     "112233": ('Mikasa', 19),
 }
 
-
 with open('jsontest.json', 'w') as f:
     json.dump(input_dict, f)
