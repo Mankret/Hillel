@@ -3,9 +3,11 @@
 from Implementation import Main
 from persontest import Person
 
+
 person = Person()
 data = Main()
 while True:
+
     start = input("""  
     * Чтение данные (load, l, чтение, ч):                       
     * Записать данные (record, r, записать, з):                  
@@ -27,7 +29,4 @@ while True:
     elif start.lower() in ('выход', 'exit', 'quit', 'e', 'q'):
         break
 
-# хранить данные постоянно в переменных
-# сделать отдельную опцию сохранения данных
-# поиск по совпадениям
-# хранить данные в отдельном списке для каждого человека
+
