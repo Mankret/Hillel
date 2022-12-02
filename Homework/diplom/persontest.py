@@ -79,6 +79,7 @@ class Person:
 
             date_of_death = input('Введите дату смерти, (н, n): ').replace('-', '.').replace('/', '.').replace(' ', '.')
             if date_of_death.lower() in ('n', 'н'):
+                data_dict['date of death'] = 'Жив'
                 my_list.append(data_dict)
                 end = input('Данны сохранены, нажмите Enter для продолжения: ')
                 offer = input('Введите (выход, exit, quit, e, q) для выхода: ')

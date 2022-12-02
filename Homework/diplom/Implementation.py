@@ -16,5 +16,5 @@ class Main:
         with open('data.csv') as reader:
             file_reader = csv.reader(reader, delimiter=";")
             for item in file_reader:
-                print(*item)
+                print(f'{item[0]} {item[1]} {item[2]}, {item[3]} лет. Родился: {item[4]}, пол: {item[5]}, статус: {item[6]}')
 

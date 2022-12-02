@@ -1,5 +1,3 @@
-# Основной файл!#детальная запись данных ввода( имя, фамилия, дата рождения, дата смерти, пол
-
 from Implementation import Main
 from persontest import Person
 
@@ -9,13 +7,13 @@ data = Main()
 while True:
 
     start = input("""  
-    * Чтение данные (load, l, чтение, ч):                       
+    * Чтение данные из файла (read, rd, чтение, ч):                       
     * Записать данные (record, r, записать, з):                  
     * Произвести поиск по существующим данным (search,s, поиск, п):                 
     * Выход: (выход, exit, quit, e, q) : 
     * Сохранить данные в csv файл (save, сохранить, с): """)
 
-    if start.lower() in ('load', 'l', 'чтение', 'ч'):
+    if start.lower() in ('read', 'rd', 'чтение', 'ч'):
 
         person.load()
         continue
