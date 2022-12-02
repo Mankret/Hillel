@@ -114,7 +114,6 @@ class Person:
                 break
             break
 
-
     @staticmethod
     def save_to_file():
         for item, dict_new in enumerate(my_list):

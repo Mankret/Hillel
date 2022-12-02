@@ -2,9 +2,7 @@ import csv
 
 
 class Main:
-    SAVE_FILE = 'Data.xlsx'
-    LOAD_FILE = 'Data.xlsx'
-    SEARCH_FILE = 'Data.xlsx'
+
 
     @staticmethod
     def save_file(self):
