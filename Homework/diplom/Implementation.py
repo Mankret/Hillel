@@ -16,5 +16,5 @@ class Main:
         with open('data.csv') as reader:
             file_reader = csv.reader(reader, delimiter=";")
             for item in file_reader:
-                print(item)
+                print(*item)
 
