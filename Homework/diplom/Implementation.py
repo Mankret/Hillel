@@ -18,8 +18,3 @@ class Main:
             for item in file_reader:
                 print(item)
 
-    @staticmethod
-    def templ_save(self=0):
-        data_person = self
-        save_data = data_person
-        return save_data
