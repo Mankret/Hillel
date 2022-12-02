@@ -13,7 +13,7 @@ while True:
     * Записать данные (record, r, записать, з):                  
     * Произвести поиск по существующим данным (search,s, поиск, п):                 
     * Выход: (выход, exit, quit, e, q) : 
-    * Сохранить данные в csv файл (save, s, сохранить, с): """)
+    * Сохранить данные в csv файл (save, сохранить, с): """)
 
     if start.lower() in ('load', 'l', 'чтение', 'ч'):
 
@@ -24,9 +24,10 @@ while True:
     elif start.lower() in ('search', 's', 'поиск', 'п'):
         person.search()
 
-    elif start.lower() in ('save', 's', 'сохранить', 'с'):
-        ...
+    elif start.lower() in ('save', 'сохранить', 'с'):
+        person.save_to_file()
     elif start.lower() in ('выход', 'exit', 'quit', 'e', 'q'):
+        person.save_to_file()
         break
 
 
