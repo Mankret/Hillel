@@ -3,7 +3,6 @@ import csv
 
 class Main:
 
-
     @staticmethod
     def save_file(self):
         data_input = dict(self)
