@@ -68,6 +68,7 @@ class Person:
             date_born = datetime.datetime.strptime(date_of_born, '%d.%m.%Y')
             calcul.agecalc(date_born)
             data_dict['age'] = calcul.agecalc(date_born)
+            print(calcul.agecalc(date_born))
 
             data_dict['date of born'] = date_of_born
 
@@ -91,6 +92,7 @@ class Person:
             date_death = datetime.datetime.strptime(date_of_death, '%d.%m.%Y')
             calcul.agedeath(date_death, date_born)
             data_dict['age'] = calcul.agedeath(date_death, date_born)
+            print(calcul.agedeath(date_death, date_born))
 
             data_dict['date of death'] = date_of_death
             my_list.append(data_dict)
